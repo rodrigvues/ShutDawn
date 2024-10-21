@@ -12,13 +12,13 @@
         <div>
             <h1>ShutDown</h1>
             <ul>
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Usuários</a></li>
-                <li><a href="#">Relatório</a></li>
+                <li><a href="#" class="sidebar-link">Dashboard</a></li>
+                <li><a href="#" class="sidebar-link">Usuários</a></li>
+                <li><a href="#" class="sidebar-link">Relatório</a></li>
             </ul>
         </div>
         <div class="logout">
-            <button>Sair</button>
+            <button>Log out</button>
         </div>
     </div>
 
@@ -27,13 +27,16 @@
         <div class="header">
             <input type="search" placeholder="Buscar...">
             <div class="user-profile">
-                <img src="user-image-url" alt="User">
                 <span class="user-name">Nome do Usuário</span>
+                <img src="user-image-url" alt="User">
             </div>
         </div>
 
-        <h2>Dashboard Tarefas</h2>
-
+        <div class="titulo-dashboard">
+            <h2>Dashboard Tarefas</h2>
+            <a href="#" class="add-task-btn">Nova Tarefa +</a>
+        </div>
+        
         <div class="dashboard">
             <!-- Pendência Column -->
             <div class="column pendente">
@@ -123,7 +126,8 @@
             </div>
         </div>
         
-        <a href="#" class="add-task-btn">Nova Tarefa +</a>
+        
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -20,7 +20,7 @@ body {
 
 .sidebar {
     width: 250px;
-    background-color: #f0dab6;
+    background-color: #f0dab6; /* Fundo da sidebar */
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -34,24 +34,36 @@ body {
     margin-bottom: 20px;
 }
 
+/* Remover marcadores da lista */
 .sidebar ul {
     list-style-type: none;
+    padding: 0;
 }
 
 .sidebar ul li {
     margin: 10px 0;
 }
 
+/* Estilizando os links da sidebar */
 .sidebar ul li a {
     text-decoration: none;
     font-size: 18px;
     color: #354f52;
-    display: flex;
-    align-items: center;
+    background-color: #e7ebf0; /* Cor de fundo dos itens não selecionados */
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: block;
+    text-align: left;
+    transition: background-color 0.3s ease;
 }
 
 .sidebar ul li a:hover {
-    text-decoration: underline;
+    background-color: #c4dce3; /* Cor de fundo ao passar o mouse */
+}
+
+.sidebar ul li a.active {
+    background-color: #2a9d8f; /* Cor de fundo do item ativo */
+    color: white; /* Cor do texto no item ativo */
 }
 
 .logout {
@@ -114,6 +126,9 @@ body {
     display: flex;
     gap: 20px;
     flex-grow: 1;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    margin-bottom: 5vh;
 }
 
 .column {
@@ -182,4 +197,12 @@ body {
 
 .pronto {
     background-color: #ffe5d9;
+}
+
+.titulo-dashboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    margin-bottom: 20px; 
 }
